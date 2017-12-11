@@ -32,6 +32,10 @@ var checkForMatch = function () {
 		alert("you found a match!");
 	} else {
 		alert("sorry, try again.");
+		cardsInPlay.pop();
+		cardsInPlay.pop();
+		clearBoard();
+		createBoard();
 	}
 }
 
@@ -45,6 +49,7 @@ var flipCard = function () {
 	}
 }; 
 
+
 var createBoard = function () {
 	for (var i = 0; i < cards.length; i++) {
 		var cardElement = document.createElement('img');
@@ -52,8 +57,11 @@ var createBoard = function () {
 		cardElement.setAttribute("data-id", i);
 		cardElement.addEventListener('click', flipCard);
 		document.getElementById('game-board').appendChild(cardElement);
-
 	}
+}
+
+var clearBoard = function () {
+	document.getElementById("game-board").innerHTML = "";
 }
 
 createBoard(); 

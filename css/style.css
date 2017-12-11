@@ -49,6 +49,25 @@ a {
 	color: #000000;
 }
 
+#reset-button {
+	color: white;
+	background-color: #B7C9C4;
+	border: none;
+	border-radius: 8px;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#reset-button:hover {
+	background-color: #DCEDE8;
+	color: white;
+}
+
 h1 {
 	text-transform: uppercase;
 	font-family: "Raleway", sans-serif;
@@ -75,6 +94,7 @@ h3 {
 	letter-spacing: 1px;
 	font-weight: 600;
 	font-size: 20px;
+	padding:20px;
 }
 
 p {
