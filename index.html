@@ -23,25 +23,36 @@
 	</nav>
 
 	<main>
+
 	<h3>History</h3>
+
 	<p>Concentration, also known as Match Match, Memory, Pelmanism (after Christopher Louis Pelman, who founded the "Pelman Institude for the Scientific Development of Mind, Memory and Personality" in London in 1899), Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.</p>
+
 	<h3 id="instructions">Instructions</h3>
+	
 	<p>Two or more people can play. A standard Anglo-American 52-card pack can be used, or any other kind of cards, provided that the backs are indistinguishable and the faces can be matched up in pairs or quartets. The cards are thoroughly mixed and spread face down on the playing surface - table or floor. The cards should not overlap, and can be arranged in a regular pattern or spread irregularly as desired. Players take turns to play. At your turn you turn face up two cards of your choice from the layout. If they match, you take these two cards, store them in front of you, and take another turn. If they do not match, you turn them face down, without changing their position in the layout, and it is the next player's turn. Play continues until all the cards from the layout have been taken as matched pairs. Each player scores one point for each pair taken. The player with most points is the winner - if two or more tie for most points they all win.</p> 
 
 	<div id="game-board" class="board clearfix"></div>
-	<input id="reset-button" type="button" value="reset button" onclick="clearBoard();createBoard();"/> 
+
+	<p id = "scoreline">Your score: <span id="scoreboard">0</span></p>
+	
+	<button class="reset">reset game</button> 
 
 	<h3>About the Developer</h3>
+	
 	<p>Emily Garrett, based in Seattle.</p>
 
-	<div class="social-media"><a href="http://www.twitter.com/egarrett94">Twitter</a>
-	<a href="http://www.github.com/egarrett94">GitHub</a>
+	<div class="social-media"><a id="twitter" href="http://www.twitter.com/egarrett94">Twitter</a>
+	<a id="github" href="http://www.github.com/egarrett94">GitHub</a>
 	</div>
 
 	</main>
+	
 	<footer class="clearfix">
 		<p class="copyright">Copyright 2017</p>
 		<p class="message">Created with &hearts; by <span class="name">Emily Garrett</span></p>
+	</footer>
+
 	<script src="js/main.js"></script>
 </body>
 </html>

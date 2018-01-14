@@ -25,11 +25,14 @@ var cards = [
 ]; 
 
 var cardsInPlay = [];
+var playerScore = 0;
 
-var checkForMatch = function () {
-	
+var checkForMatch = function () {	
 	if (cardsInPlay[0] === cardsInPlay[1]) {
 		alert("you found a match!");
+		playerScore = playerScore+1;
+		document.getElementById("scoreboard").innerHTML = playerScore;
+		cardsInPlay = [];
 	} else {
 		alert("sorry, try again.");
 		cardsInPlay.pop();
@@ -65,3 +68,12 @@ var clearBoard = function () {
 }
 
 createBoard(); 
+
+var resetButton = function () {
+	clearBoard();
+	createBoard();
+	playerScore = 0;
+}
+
+var button = document.getElementsByClassName('reset');
+button[0].addEventListener('click', resetButton);

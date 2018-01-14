@@ -25,18 +25,6 @@ img {
 	margin: 40px 8px 40px 8px;
 }
 
-.social-media {
-	text-decoration: none;
-	text-transform: uppercase;
-	font-family: "Raleway", sans-serif;
-	letter-spacing: 1px;
-	font-weight: 600;
-	font-size: 14px;
-	font-color: #000000;
-	margin: 0 20px 0 20px;
-	border-bottom: 2px solid transparent;
-}
-
 a {
 	text-decoration: none;
 	text-transform: uppercase;
@@ -47,25 +35,6 @@ a {
 	margin: 0 20px 0 20px;
 	border-bottom: 2px solid transparent;
 	color: #000000;
-}
-
-#reset-button {
-	color: white;
-	background-color: #B7C9C4;
-	border: none;
-	border-radius: 8px;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	-webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-}
-
-#reset-button:hover {
-	background-color: #DCEDE8;
-	color: white;
 }
 
 h1 {
@@ -127,6 +96,26 @@ a:hover {
 	font-size: 0;
 }
 
+.social-media {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Raleway", sans-serif;
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-size: 14px;
+	font-color: #000000;
+	margin: 0 20px 0 20px;
+	border-bottom: 2px solid transparent;
+}
+
+#github:hover {
+	font-style: italic;
+}
+
+#twitter:hover {
+	font-style: italic;
+}
+
 .name {
 	color: #F15B31;
 	font-weight: 700;
@@ -140,4 +129,27 @@ a:hover {
 .message {
 	float: right;
 	font-family: "Raleway", sans-serif;
+}
+
+#scoreline {
+	margin-bottom: 40px;
+}
+
+.reset{
+	color: white;
+	background-color: #B7C9C4;
+	border: none;
+	border-radius: 8px;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.reset:hover {
+	background-color: #DCEDE8;
+	color: white;
 }
