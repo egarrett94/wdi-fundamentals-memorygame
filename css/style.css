@@ -23,6 +23,12 @@ main {
 
 img {
 	margin: 40px 8px 40px 8px;
+	transition: transform .2s;
+	-webkit-transition-duration: 0.2s;
+}
+
+img:hover{
+	transform: scale(1.2);
 }
 
 a {
@@ -133,6 +139,29 @@ a:hover {
 
 #scoreline {
 	margin-bottom: 40px;
+}
+
+#instruct-p {
+	display: none;
+}
+
+.textReveal {
+	color: white;
+	background-color: #B7C9C4;
+	border: none;
+	border-radius: 8px;
+	padding: 10px 27px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.textReveal:hover {
+	background-color: #DCEDE8;
+	color: white;
 }
 
 .reset{
