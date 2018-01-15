@@ -73,7 +73,17 @@ var resetButton = function () {
 	clearBoard();
 	createBoard();
 	playerScore = 0;
+	document.getElementById("scoreboard").innerHTML = playerScore;
 }
 
 var button = document.getElementsByClassName('reset');
 button[0].addEventListener('click', resetButton);
+
+function revealInstruct() {
+    var x = document.getElementById("instruct-p");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
